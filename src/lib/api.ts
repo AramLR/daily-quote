@@ -15,7 +15,22 @@ async function getDailyQuote() {
         }
       )
 
-    return res
+    if (!res.ok) {
+      throw Error(
+        "Couldn't get 200 code from API"
+      )
+    }
+
+    const data =
+      res.data[0]
+
+    const quote = data.q
+    const author = data.a
+
+    return {
+      quote,
+      author
+    }
 
     // Prevent any error
   } catch (error) {

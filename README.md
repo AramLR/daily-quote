@@ -1,7 +1,3 @@
-# Tauri + Svelte + Typescript
+# Daily Quote
 
-This template should help get you started developing with Tauri, Svelte and TypeScript in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+Daily Quote is a simple and minimal app made with Tauri.JS that shows you a daily quote on your screen. Daily Quote helps you start your day with a positive and uplifting message, or end it with a smile and a reflection.

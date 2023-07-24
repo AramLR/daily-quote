@@ -1,4 +1,5 @@
 <script lang="ts">
+  import App from './App.svelte'
   import { getDailyQuote } from './lib/api'
 </script>
 
@@ -34,4 +35,30 @@
 {/await}
 
 <style>
+  #quoteBlock {
+    margin: 20px;
+  }
+
+  #quote,
+  #author,
+  #loading {
+    font-size: 2em;
+    font-weight: 1000;
+  }
+
+  #author::before {
+    content: '- ';
+  }
+
+  #quote {
+    font-style: italic;
+  }
+
+  #quote::before {
+    content: '"';
+  }
+
+  #quote::after {
+    content: '"';
+  }
 </style>
